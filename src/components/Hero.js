@@ -10,7 +10,10 @@ export default function Hero() {
         <p>
           My name is Ben Laubach. Currently, I am studying full stack web
           development in the University of Washington's coding bootcamp. Feel
-          free to take a look around my github for my work, or contact me.
+          free to take a look around my github for my work, or contact me. I am
+          working on a full-stack application for production companies aimed
+          towards keeping track of non-conforming products in an easy to see
+          manner.
         </p>
       </section>
     </div>

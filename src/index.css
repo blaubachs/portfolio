@@ -40,12 +40,17 @@ code {
 }
 
 .nav {
-  border: 1px solid black;
+  background: var(--elev-1);
   height: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.nav h1 {
+  font-size: 160%;
+  padding-left: 0.5rem;
 }
 
 .nav ul {
@@ -75,6 +80,7 @@ code {
   width: 25%;
   height: 90%;
   display: flex;
+  font-size: 200%;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
@@ -88,4 +94,8 @@ code {
   display: flex;
   padding-left: 15px;
   align-items: center;
+}
+
+.right-side p {
+  text-align: start;
 }
