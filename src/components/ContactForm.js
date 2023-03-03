@@ -8,6 +8,16 @@ export default function ContactForm() {
     message: "",
   });
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
   const handleChange = (e) => {
     setFormData({
       // copies existing object
@@ -16,12 +26,14 @@ export default function ContactForm() {
       [e.target.name]: e.target.value,
     });
   };
+
   return (
-    <form className="contact-form">
+    <form className="contact-form" onSubmit={handleSubmit}>
       <div className="form-container">
         <label htmlFor="name">Name</label>
         <input
           type="text"
+          value={formData.name}
           name="name"
           id="name"
           onChange={handleChange}
@@ -29,6 +41,7 @@ export default function ContactForm() {
         <label htmlFor="email">Email</label>
         <input
           type="text"
+          value={formData.email}
           name="email"
           id="email"
           onChange={handleChange}
@@ -36,6 +49,7 @@ export default function ContactForm() {
         <label htmlFor="message">Message</label>
         <textarea
           type="text"
+          value={formData.message}
           name="message"
           id="message"
           onChange={handleChange}
