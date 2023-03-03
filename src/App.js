@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
+import Resume from "./components/Resume";
 import ContactForm from "./components/ContactForm";
 import "./index.css";
 import { useState } from "react";
@@ -21,6 +22,7 @@ function App() {
       {navState === "About Me" && <AboutMe />}
       {navState === "My Work" && <Work />}
       {navState === "Contact" && <ContactForm />}
+      {navState === "Resume" && <Resume />}
     </div>
   );
 }
