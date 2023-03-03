@@ -18,3 +18,7 @@
 .container {
   padding: 1rem;
 }
+
+.container p {
+  color: var(--text-secondary);
+}
