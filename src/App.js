@@ -16,8 +16,9 @@ function App() {
   return (
     <div className="App">
       <Nav handlePageChange={handlePageChange} />
+      {/* Conditionally render page on what state is assigned to */}
       {navState === "About Me" && <AboutMe />}
-      {navState === "Work" && <Work />}
+      {navState === "My Work" && <Work />}
     </div>
   );
 }

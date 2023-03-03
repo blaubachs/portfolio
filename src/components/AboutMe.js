@@ -1,10 +1,12 @@
 import React from "react";
+import Me from "../assets/img/me.jpg";
 
 export default function AboutMe() {
   return (
     <div className="hero">
       <section className="left-side">
         <h2>ABOUT ME</h2>
+        <img src={Me} alt="me" id="me-img" />
       </section>
       <section className="right-side">
         <p>

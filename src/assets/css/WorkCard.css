@@ -1,0 +1,20 @@
+.work-card {
+  margin: 1rem;
+  transition: 300ms ease-in-out;
+  background: var(--elev-2);
+  box-shadow: 2px 2px 5px var(--elev-1);
+}
+
+.work-card img {
+  height: 400px;
+  width: 400px;
+  transition: 300ms ease-in-out;
+}
+
+.work-card:hover {
+  scale: 104%;
+}
+
+.container {
+  padding: 1rem;
+}

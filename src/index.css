@@ -100,3 +100,8 @@ code {
 .right-side p {
   text-align: start;
 }
+
+#me-img {
+  height: 200px;
+  padding: 0.5rem;
+}
