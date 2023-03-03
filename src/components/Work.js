@@ -7,6 +7,8 @@ export default function Work() {
       <section className="left-side">MY WORK</section>
       <section className="right-side">
         <WorkCard />
+        <WorkCard />
+        <WorkCard />
       </section>
     </div>
   );
