@@ -7,7 +7,7 @@
   --elev-3: #515151;
   --text-primary: #f7f7f7;
   --text-secondary: #b1b1b1;
-  --accent: rgb(117, 0, 200);
+  --accent: rgb(0, 110, 200);
 }
 
 ol,
@@ -16,7 +16,7 @@ ul {
 }
 
 a {
-  color: rgb(117, 0, 200);
+  color: rgb(0, 110, 200);
   text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ code {
 }
 
 .App {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .nav {
@@ -87,6 +87,10 @@ code {
   justify-content: center;
   padding-right: 15px;
   border-right: 3px solid var(--accent);
+}
+
+.left-side h2 {
+  margin-right: 1rem;
 }
 
 .work .left-side {
