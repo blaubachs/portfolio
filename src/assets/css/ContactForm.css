@@ -1,0 +1,26 @@
+.contact-form {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.form-container input,
+textarea {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: var(--elev-2);
+  color: var(--text-secondary);
+}
+
+#message {
+  height: 200px;
+  text-align: start;
+}
