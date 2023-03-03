@@ -5,8 +5,10 @@ function Nav(props) {
     <div className="nav">
       <h1>BEN LAUBACH</h1>
       <ul>
-        <li>Github</li>
-        <li>Email</li>
+        <a href="https://github.com/blaubachs" target="_blank" rel="noreferrer">
+          Github
+        </a>
+        <a href="/">Email</a>
       </ul>
     </div>
   );
