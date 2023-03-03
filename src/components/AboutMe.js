@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Hero() {
+export default function AboutMe() {
   return (
     <div className="hero">
       <section className="left-side">
