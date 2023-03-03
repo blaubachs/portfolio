@@ -11,6 +11,9 @@ export default function ContactForm() {
         <input type="text" id="email"></input>
         <label htmlFor="message">Message</label>
         <textarea type="text" id="message"></textarea>
+        <button type="submit" id="sendBtn">
+          Send
+        </button>
       </div>
     </form>
   );
