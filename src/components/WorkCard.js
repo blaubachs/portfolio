@@ -6,8 +6,8 @@ export default function WorkCard(props) {
     <div className="work-card">
       <img src={props.src} alt={props.alt}></img>
       <div className="container">
-        <h3>{props.title}Board Game Party</h3>
-        <p>{props.description}Front-end application for finding board games.</p>
+        <h3>{props.title}</h3>
+        <p>{props.description}</p>
       </div>
     </div>
   );
