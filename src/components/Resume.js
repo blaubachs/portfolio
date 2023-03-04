@@ -1,10 +1,11 @@
 import React from "react";
 import resume from "../assets/img/BEN_LAUBACH_RESUME.pdf";
+import "../assets/css/Resume.css";
 
 export default function Resume() {
   return (
-    <div>
-      <section className="skills">
+    <div className="skills">
+      <section>
         <h2>Front End Skills</h2>
         <ul className="skill-list">
           <li>HTML</li>
@@ -23,7 +24,7 @@ export default function Resume() {
         </ul>
       </section>
       <a href={resume} download>
-        <button>Download My Resume</button>
+        <button id="downloadBtn">Download My Resume</button>
       </a>
     </div>
   );
