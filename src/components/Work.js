@@ -10,6 +10,7 @@ export default function Work() {
       title: "Board Game Party",
       alt: "Board Game Party",
       src: BGP,
+      link: "https://bram-g.github.io/Board-Game-Party/",
       description:
         "Front-end application to find board games based on the user's search criteria.",
     },
@@ -17,12 +18,14 @@ export default function Work() {
       title: "Wild Thorn Apothecary",
       alt: "Wild Thorn Apothecary",
       src: WTA,
+      link: "https://wildthornapothecary.herokuapp.com/",
       description: "Full-stack application that utilizes SQL and handlebars.",
     },
     {
       title: "Twogger",
       alt: "Twogger",
       src: TWO,
+      link: "https://twoggerblogger.herokuapp.com/",
       description:
         "A full-stack blogging application where users can create posts and comments.",
     },
@@ -39,6 +42,7 @@ export default function Work() {
             alt={project.alt}
             title={project.title}
             description={project.description}
+            link={project.link}
           />
         ))}
       </section>
