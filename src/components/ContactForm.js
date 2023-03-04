@@ -29,6 +29,7 @@ export default function ContactForm() {
 
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
+      <h1>Contact</h1>
       <div className="form-container">
         <label htmlFor="name">Name</label>
         <input
@@ -54,6 +55,12 @@ export default function ContactForm() {
           id="message"
           onChange={handleChange}
         ></textarea>
+        <br></br>
+        {formData.name === "" && <p>You must include a name.</p>}
+        {!formData.email.match(
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+        ) && <p>Must include a valid email address</p>}
+        {formData.message === "" && <p>You must include a message.</p>}
         <button type="submit" id="sendBtn">
           Send
         </button>
