@@ -35,10 +35,6 @@ code {
     monospace;
 }
 
-.App {
-  /* border: 1px solid black; */
-}
-
 .nav {
   background: var(--elev-1);
   height: 50px;
@@ -104,6 +100,7 @@ code {
   display: flex;
   padding-left: 15px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .right-side p {
