@@ -3,6 +3,7 @@ import WorkCard from "./WorkCard";
 import BGP from "../assets/img/Board-Game-Party.png";
 import WTA from "../assets/img/wta-home.jpg";
 import TWO from "../assets/img/twogg.PNG";
+import UNC from "../assets/img/unc.png";
 
 export default function Work() {
   const myWorkArr = [
@@ -28,6 +29,27 @@ export default function Work() {
       link: "https://twoggerblogger.herokuapp.com/",
       description:
         "A full-stack blogging application where users can create posts and comments.",
+    },
+    {
+      title: "Under Construction...",
+      alt: "placeholder project",
+      src: UNC,
+      description:
+        "This project will be updated as time goes on. Check back later!",
+    },
+    {
+      title: "Under Construction...",
+      alt: "placeholder project",
+      src: UNC,
+      description:
+        "This project will be updated as time goes on. Check back later!",
+    },
+    {
+      title: "Under Construction...",
+      alt: "placeholder project",
+      src: UNC,
+      description:
+        "This project will be updated as time goes on. Check back later!",
     },
   ];
   return (
