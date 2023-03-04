@@ -107,6 +107,13 @@ code {
   text-align: start;
 }
 
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
 #me-img {
   height: 200px;
   padding: 0.5rem;

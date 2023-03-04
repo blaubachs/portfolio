@@ -3,6 +3,7 @@ import AboutMe from "./components/AboutMe";
 import Work from "./components/Work";
 import Resume from "./components/Resume";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 import "./index.css";
 import { useState } from "react";
 
@@ -23,6 +24,7 @@ function App() {
       {navState === "My Work" && <Work />}
       {navState === "Contact" && <ContactForm />}
       {navState === "Resume" && <Resume />}
+      <Footer />
     </div>
   );
 }
