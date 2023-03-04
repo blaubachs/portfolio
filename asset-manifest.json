@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.a39e4111.css",
+    "main.js": "/portfolio/static/js/main.2cf4c36a.js",
+    "static/media/me.jpg": "/portfolio/static/media/me.001a6109bd1bb0eef5ae.jpg",
+    "static/media/unc.png": "/portfolio/static/media/unc.0ae41d372f184aec3ec3.png",
+    "static/media/Board-Game-Party.png": "/portfolio/static/media/Board-Game-Party.07e696e2bfa4ffd4b448.png",
+    "static/media/wta-home.jpg": "/portfolio/static/media/wta-home.78d94f20e3e8b75d9d34.jpg",
+    "static/media/BEN_LAUBACH_RESUME.pdf": "/portfolio/static/media/BEN_LAUBACH_RESUME.881cbf4e1e90868eb7cb.pdf",
+    "static/media/twogg.PNG": "/portfolio/static/media/twogg.525b2e13b39910d6d289.PNG",
+    "index.html": "/portfolio/index.html",
+    "main.a39e4111.css.map": "/portfolio/static/css/main.a39e4111.css.map",
+    "main.2cf4c36a.js.map": "/portfolio/static/js/main.2cf4c36a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a39e4111.css",
+    "static/js/main.2cf4c36a.js"
+  ]
+}
