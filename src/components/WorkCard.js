@@ -8,7 +8,7 @@ import TWO from "../assets/img/twogg.PNG";
 export default function WorkCard(props) {
   return (
     <div className="work-card">
-      <img src={BGP} alt={props.alt}></img>
+      <img src={props.src} alt={props.alt}></img>
       <div className="container">
         <h3>{props.title}Board Game Party</h3>
         <p>{props.description}Front-end application for finding board games.</p>
