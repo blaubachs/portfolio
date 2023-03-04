@@ -2,7 +2,9 @@
 
 ## Description
 
-This project was built with react to create a single page portfolio to update as time goes on to improve for employers to see in the future. I will be actively working on this and improving it/updating projects as soon as possible!
+This project was built with react to create a single page portfolio to update as time goes on to improve for employers to see in the future. I will be actively working on this and improving it/updating projects as soon as possible.
+
+![screenshot](./src/assets/img/portfolio-screenshot.PNG)
 
 ## Table of Contents
 
@@ -18,7 +20,7 @@ None required. Feel free to visit the site [here](https://blaubachs.github.io/po
 
 ## Usage
 
-Feel free to click around and take a look at each page. You are able to download my resume from the resume page!
+Feel free to click around and take a look at each page. You are able to download my resume from the resume page.
 
 ## License
 
