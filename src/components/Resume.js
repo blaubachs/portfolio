@@ -1,8 +1,12 @@
 import React from "react";
+import resume from "../assets/img/BEN_LAUBACH_RESUME.pdf";
 
 export default function Resume() {
   return (
     <div>
+      <a href={resume} download>
+        <button>Download My Resume</button>
+      </a>
       <section className="skills">
         <h2>Front End Skills</h2>
         <ul className="skill-list">
