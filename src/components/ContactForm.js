@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/css/ContactForm.css";
 
 export default function ContactForm() {
@@ -7,10 +7,48 @@ export default function ContactForm() {
     email: "",
     message: "",
   });
+  const [errState, setErrState] = useState({
+    nameErr: false,
+    emailErr: false,
+    messageErr: false,
+  });
+
+  useEffect(() => {
+    if (errState.emailErr || errState.messageErr || errState.nameErr) {
+      setTimeout(() => {
+        setErrState({
+          emailErr: false,
+          nameErr: false,
+          messageErr: false,
+        });
+        console.log("Resetting error state...");
+      }, 1500);
+    }
+  }, [errState]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    Object.keys(formData).forEach(
+      (key) => (formData[key] = formData[key].trim())
+    );
+    if (formData.name === "") {
+      setErrState({ ...errState, nameErr: true });
+      return;
+    }
+    if (
+      !formData.email.match(
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+      )
+    ) {
+      setErrState({ ...errState, emailErr: true });
+      return;
+    }
+    if (formData.message === "") {
+      setErrState({ ...errState, messageErr: true });
+      return;
+    }
+
     setFormData({
       name: "",
       email: "",
@@ -56,11 +94,9 @@ export default function ContactForm() {
           onChange={handleChange}
         ></textarea>
         <br></br>
-        {formData.name === "" && <p>You must include a name.</p>}
-        {!formData.email.match(
-          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-        ) && <p>Must include a valid email address</p>}
-        {formData.message === "" && <p>You must include a message.</p>}
+        {errState.nameErr && <p>You must include a name.</p>}
+        {errState.emailErr && <p>Must include a valid email address</p>}
+        {errState.messageErr && <p>You must include a message.</p>}
         <button type="submit" id="sendBtn">
           Send
         </button>
