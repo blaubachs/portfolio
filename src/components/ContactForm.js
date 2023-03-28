@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/css/ContactForm.css";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -49,6 +50,21 @@ export default function ContactForm() {
       return;
     }
 
+    emailjs
+      .sendForm(
+        "service_lps44ag",
+        "template_d4t646n",
+        e.target,
+        "xXijcHloQ_E4ePT4I"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     setFormData({
       name: "",
       email: "",
