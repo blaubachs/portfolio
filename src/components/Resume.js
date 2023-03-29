@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../assets/img/BEN_LAUBACH_RESUME.pdf";
+import resume from "../assets/img/Ben_Laubach.pdf";
 import "../assets/css/Resume.css";
 
 export default function Resume() {
