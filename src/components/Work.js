@@ -2,6 +2,7 @@ import React from "react";
 import WorkCard from "./WorkCard";
 import BGP from "../assets/img/Board-Game-Party.png";
 import WTA from "../assets/img/wta-home.jpg";
+import CAT from "../assets/img/cattention.png";
 import TWO from "../assets/img/twogg.PNG";
 import UNC from "../assets/img/unc.png";
 
@@ -23,19 +24,19 @@ export default function Work() {
       description: "Full-stack application that utilizes SQL and handlebars.",
     },
     {
+      title: "CATtention",
+      alt: "CATtention",
+      src: CAT,
+      link: "https://cattention.netlify.app",
+      description: "Full stack productivity app featuring socket.io and React.",
+    },
+    {
       title: "Twogger",
       alt: "Twogger",
       src: TWO,
       link: "https://twoggerblogger.herokuapp.com/",
       description:
         "A full-stack blogging application where users can create posts and comments.",
-    },
-    {
-      title: "Under Construction...",
-      alt: "placeholder project",
-      src: UNC,
-      description:
-        "This project will be updated as time goes on. Check back later!",
     },
     {
       title: "Under Construction...",
